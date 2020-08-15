@@ -121,6 +121,7 @@ main {
 	position: relative;
 	z-index: -1;
 }
+
 .top-section-flex {
 	position: relative;
 	display: flex;
@@ -238,7 +239,7 @@ main {
 		font-size: 16px;
 	}
 	.top-section {
-		background-size: auto;
-		background-attachment: scroll;
+		background-size: initial;
+		background-attachment: fixed;
 	}
 }

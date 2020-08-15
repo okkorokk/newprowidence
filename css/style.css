@@ -1,0 +1,240 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: "Lato", sans-serif;
+	font-family: "Varela Round", sans-serif;
+}
+/*header*/
+header {
+	position: fixed;
+	width: 100%;
+	background-color: white;
+
+	padding-bottom: 20px;
+}
+.fixed-container {
+	max-width: 1170px;
+}
+.header-flex {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: #26272d;
+}
+li {
+	list-style-type: none;
+	margin-left: 20;
+	margin-right: 20px;
+}
+.get-app {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 135px;
+	height: 45px;
+	color: white;
+	background-color: #267df4;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+.get-app p {
+	padding-left: 10px;
+	font-family: "Lato", sans-serif;
+}
+.get-app img {
+	position: absolute;
+	top: 11px;
+	left: 14px;
+}
+.burger-menu {
+	display: none;
+	width: 30px;
+	height: 20px;
+	position: relative;
+}
+.burger-menu span {
+	background-color: black;
+	border-radius: 5px;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	transition: 0.2s;
+	left: 0;
+	top: 9px;
+}
+.burger-menu::before,
+.burger-menu::after {
+	content: "";
+	background-color: black;
+	border-radius: 5px;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	transition: 0.2s;
+	left: 0;
+}
+.burger-menu::before {
+	top: 0;
+}
+.burger-menu::after {
+	bottom: 0;
+}
+.lock {
+	overflow: hidden;
+}
+.logo-hidden {
+	display: none;
+}
+.mobile-menu {
+	top: 0 !important;
+}
+/*main*/
+main {
+	padding-top: 90px;
+}
+.top-section {
+	background-image: url(../src/banner_background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 900px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	z-index: -1;
+}
+.top-section-flex {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.top-section-phone {
+	position: absolute;
+	max-width: 300px;
+	top: 540px;
+}
+
+.top-section-title {
+	font-size: 62px;
+	text-align: center;
+	font-family: "Varela Round", sans-serif;
+	margin: 10px;
+	margin-top: 90px;
+}
+.top-section-text {
+	max-width: 770px;
+	text-align: center;
+	font-size: 20px;
+	color: #a5a7ac;
+	margin: 10px;
+}
+
+.features-section {
+	width: 100%;
+	min-height: 350px;
+	background-color: white;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	padding-top: 115px;
+}
+.features-section-flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #f4f4f4;
+}
+.features-title {
+	color: #26272d;
+}
+.features-column {
+	max-width: 490px;
+	padding: 10px;
+}
+.features-column p {
+	color: #8c8f94;
+}
+@media (max-width: 768px) {
+	main {
+		padding-top: 40px;
+	}
+	.burger-menu {
+		display: block;
+		margin-right: 15px;
+	}
+	.header-flex {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		background-color: white;
+		justify-content: center;
+		transition: 0.5s;
+		overflow: auto;
+		top: -150%;
+	}
+	.nav-container {
+		flex-direction: column;
+	}
+	.nav-item {
+		margin: 10px 0;
+	}
+	.contacts-item {
+		margin: 10px 0;
+	}
+	.logo {
+		order: -1;
+	}
+	.logo-hidden {
+		display: block;
+		margin-left: 10px;
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		padding-left: 0;
+	}
+	.burger-menu.active::before {
+		transform: rotate(45deg);
+		top: 9px;
+		transition: 0.2s;
+	}
+	.burger-menu.active::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+		transition: 0.2s;
+	}
+	.burger-menu.active span {
+		transform: scale(0);
+	}
+}
+@media (max-width: 576px) {
+	.top-section-title {
+		font-size: 40px;
+	}
+	.top-section-text {
+		font-size: 16px;
+	}
+}

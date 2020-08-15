@@ -239,7 +239,7 @@ main {
 		font-size: 16px;
 	}
 	.top-section {
-		background-size: initial;
+		background-size: auto;
 		background-attachment: fixed;
 	}
 }

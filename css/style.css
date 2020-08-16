@@ -199,11 +199,30 @@ main {
 	font-family: "Varela Round", sans-serif;
 	cursor: pointer;
 }
+.map-features-flex {
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-wrap: wrap-reverse;
+}
+.map-img {
+	object-fit: cover;
+	width: 50%;
+}
+.partners-text {
+	color: #26272d !important;
+	font-weight: 600;
+}
 @media (max-width: 1036px) {
 	.phone-features {
 		justify-content: center;
 	}
 	.phone-img {
+		width: 100%;
+	}
+	.map-img {
 		width: 100%;
 	}
 }

@@ -51,6 +51,7 @@ li {
 	border: none;
 	outline: none;
 	font-size: 16px;
+	cursor: pointer;
 }
 .get-app p {
 	padding-left: 10px;
@@ -175,6 +176,37 @@ main {
 .features-column p {
 	color: #8c8f94;
 }
+.phone-features {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.phone-img {
+	object-fit: cover;
+	width: 50%;
+}
+.learn-more {
+	margin-top: 40px;
+	width: 140px;
+	color: white;
+	background-color: #267df4;
+	outline: none;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 40px;
+	font-family: "Varela Round", sans-serif;
+	cursor: pointer;
+}
+@media (max-width: 1036px) {
+	.phone-features {
+		justify-content: center;
+	}
+	.phone-img {
+		width: 100%;
+	}
+}
 @media (max-width: 768px) {
 	main {
 		padding-top: 40px;
@@ -240,6 +272,6 @@ main {
 	}
 	.top-section {
 		background-size: auto;
-		background-attachment: fixed;
+		background-attachment: scroll;
 	}
 }

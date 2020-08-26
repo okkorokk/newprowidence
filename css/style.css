@@ -61,7 +61,7 @@ li {
 	padding-left: 10px;
 	font-family: "Lato", sans-serif;
 }
-.get-app img {
+.get-app-img {
 	position: absolute;
 	top: 11px;
 	left: 14px;
@@ -276,6 +276,20 @@ main {
 	font-size: 42px;
 	text-align: center;
 	margin-top: 10px;
+}
+.get-app-intarface {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 135px;
+	height: 45px;
+	color: white;
+	background-color: black;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	cursor: pointer;
 }
 @media (max-width: 1036px) {
 	.phone-features {

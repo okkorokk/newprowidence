@@ -291,6 +291,40 @@ main {
 	font-size: 16px;
 	cursor: pointer;
 }
+.slider-section {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+}
+.slider-container {
+	overflow: hidden;
+	margin: auto;
+}
+.slider-track {
+	max-width: 600px;
+	display: flex;
+	transition: 0.2s;
+	margin: auto;
+}
+.slider-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+}
+.slider-buttons {
+	margin: 10px;
+}
+.item-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 5px;
+}
+
 @media (max-width: 1036px) {
 	.phone-features {
 		justify-content: center;

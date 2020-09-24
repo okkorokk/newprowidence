@@ -350,7 +350,6 @@ main {
 }
 .plan-title {
 	font-size: 25px;
-	margin-left: 5px;
 }
 .plan-text {
 	padding-top: 100px;
@@ -484,6 +483,7 @@ input:checked + .slider:before {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 50px;
 }
 .email-input {
 	padding: 15px;
@@ -495,6 +495,9 @@ input:checked + .slider:before {
 .send-email {
 	background-color: #6fc754;
 	margin-left: 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 .email-form {
 	display: flex;

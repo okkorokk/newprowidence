@@ -263,7 +263,7 @@ main {
 }
 .interface-title {
 	font-size: 42px;
-	margin-top: 150px;
+	margin-top: 80px;
 	text-align: center;
 }
 .interface-title::after {
@@ -347,6 +347,10 @@ main {
 	overflow: hidden;
 }
 .plan {
+}
+.plan-title {
+	font-size: 25px;
+	margin-left: 5px;
 }
 .plan-text {
 	padding-top: 100px;
@@ -473,6 +477,28 @@ input:checked + .slider:before {
 	background-color: #ebebed;
 	transition: 0.6s;
 }
+.subscribe-section-flex {
+	margin: auto;
+	min-height: 350px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.email-input {
+	padding: 15px;
+	width: 420px;
+	border-radius: 20px;
+	outline: none;
+	border: 1px solid #d4d4d5;
+}
+.send-email {
+	background-color: #6fc754;
+	margin-left: 5px;
+}
+.email-form {
+	display: flex;
+}
 @media (max-width: 1036px) {
 	.phone-features {
 		justify-content: center;
@@ -502,7 +528,7 @@ input:checked + .slider:before {
 		margin-left: -140px;
 	}
 	.plan-section {
-		min-height: 750px;
+		min-height: 790px;
 	}
 	.plan-text {
 		display: none;
@@ -563,6 +589,9 @@ input:checked + .slider:before {
 	.burger-menu.active span {
 		transform: scale(0);
 	}
+	.email-input {
+		width: 350px;
+	}
 }
 @media (max-width: 576px) {
 	.top-section-title {
@@ -574,5 +603,17 @@ input:checked + .slider:before {
 	.top-section {
 		background-size: auto;
 		background-attachment: scroll;
+	}
+	.email-input {
+		width: 250px;
+	}
+	.email-form {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.send-email {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 }
